@@ -1,0 +1,87 @@
+/*===== BASE =====*/
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--dark-color);
+    line-height: 1.6;
+    /*min-width: 30.5rem;*/
+}
+
+h1,h2,h3,ul,p{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    /*display: block;*/
+}
+
+.section {
+    padding: 3rem 0;
+}
+
+.section-title {
+    font-size: var(--h2-font-size);
+    color: var(--dark-color);
+    margin: var(--mb-4) 0 var(--mb-1);
+    text-align: center;
+}
+
+.section-all {
+    display: block;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    color:var(--dark-color-light);
+    text-align: center;
+    margin-bottom: var(--mb-2);
+}
+
+/*===== LAYOUT =====*/
+.bd-grid{
+    max-width: 1020px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 3rem);
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3);
+}
+
+/*<!--===== BUTTONS =====-->*/
+
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: 1rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    transition: .3s
+}
+
+.button:hover {
+    background-color: var(--first-color-alt);
+}
+
+
